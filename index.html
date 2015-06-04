@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>sample Reversi</title>
+	<style>
+	.base {
+		position: relative;
+		width: 640px;
+		height: 640px;
+	}
+	.cell {
+		position: relative;
+		float: left;
+		width: 80px;
+		height: 80px;
+		background: #0a0;
+		border: 1px solid #000;
+		box-sizing: border-box;
+	}
+	.cell-black {
+		background: #000;
+	}
+	.cell-white {
+		background: #fff;
+	}
+	</style>
+</head>
+<body>
+	<div class="base">
+
+	</div>
+
+	<script src="./script.js"></script>
+	<script>
+		window.onload = function(){
+			var $base = document.querySelector('.base');
+
+			window.game = new Game($base);
+		};
+	</script>
+</body>
+</html>
